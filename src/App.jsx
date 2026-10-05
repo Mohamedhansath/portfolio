@@ -28,6 +28,7 @@ function App() {
   const [activeSection, setActiveSection] = useState("home");
   const [assistantOpen, setAssistantOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [certificateOpen, setCertificateOpen] = useState(null);
 
   useEffect(() => {
     const sections = navItems
@@ -308,19 +309,20 @@ function App() {
                       </a>
                     </div>
                   </div>
-                  <div className="project-visual">
-                    <div className="window-top"><span /><span /><span /></div>
-                    <div className="mock-ui">
-                      <div className="mock-sidebar" />
-                      <div className="mock-content">
-                        <span className="mock-line long" /><span className="mock-line" />
-                        <div className="mock-boxes"><i /><i /><i /></div>
-                        <span className="mock-line medium" />
-                        <span className="mock-line short" />
-                      </div>
-                    </div>
-                    <div className="project-orbit" />
-                  </div>
+                  <a
+                    className="project-visual project-image-link"
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Open live demo for ${project.name}`}
+                  >
+                    <img
+                      src={project.image}
+                      alt={`${project.name} project preview`}
+                      className="project-image"
+                    />
+                    <span className="project-image-overlay">OPEN LIVE DEMO ↗</span>
+                  </a>
                 </GlassCard>
               </Reveal>
             ))}
@@ -423,6 +425,38 @@ function App() {
           </div>
         </section>
       </main>
+      {certificateOpen && (
+        <div
+          className="certificate-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-label={certificateOpen.title}
+          onClick={() => setCertificateOpen(null)}
+        >
+          <div className="certificate-modal-card" onClick={(event) => event.stopPropagation()}>
+            <button
+              className="certificate-close"
+              onClick={() => setCertificateOpen(null)}
+              aria-label="Close certificate preview"
+            >
+              <Icon name="close" size={18} />
+            </button>
+            <div className="certificate-modal-head">
+              <span className="card-label">CERTIFICATE // PREVIEW</span>
+              <span>{certificateOpen.date}</span>
+            </div>
+            <img
+              src={certificateOpen.image}
+              alt={certificateOpen.title}
+              className="certificate-modal-image"
+            />
+            <div className="certificate-modal-copy">
+              <strong>{certificateOpen.title}</strong>
+              <span>{certificateOpen.issuer}</span>
+            </div>
+          </div>
+        </div>
+      )}
 
       <footer className="footer section-shell">
         <span>© {year} H Mohamed Hansath</span>
