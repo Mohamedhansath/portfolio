@@ -12,22 +12,40 @@ export const profile = {
 };
 
 export const skills = [
-  { name: "Python", group: "Backend" },
-  { name: "FastAPI", group: "Backend" },
-  { name: "REST APIs", group: "Backend" },
-  { name: "React.js", group: "Frontend" },
-  { name: "JavaScript ES6+", group: "Frontend" },
-  { name: "HTML5", group: "Frontend" },
-  { name: "CSS3", group: "Frontend" },
-  { name: "MySQL", group: "Database" },
-  { name: "SQL", group: "Database" },
-  { name: "Firebase", group: "Database / Services" },
-  { name: "AWS", group: "Cloud" },
-  { name: "Docker", group: "DevOps" },
-  { name: "Kubernetes", group: "DevOps" },
-  { name: "Jenkins", group: "DevOps" },
-  { name: "Linux", group: "Systems" },
-  { name: "Git / GitHub", group: "Tools" },
+  { name: "Python", group: "Backend", level: "Core" },
+  { name: "FastAPI", group: "Backend", level: "Core" },
+  { name: "REST APIs", group: "Backend", level: "Core" },
+
+  { name: "React.js", group: "Frontend", level: "Core" },
+  { name: "JavaScript ES6+", group: "Frontend", level: "Core" },
+  { name: "HTML5", group: "Frontend", level: "Core" },
+  { name: "CSS3", group: "Frontend", level: "Core" },
+
+  { name: "MySQL", group: "Database", level: "Core" },
+  { name: "SQL", group: "Database", level: "Core" },
+  { name: "Firebase", group: "Database / Services", level: "Beginner" },
+
+  { name: "AWS", group: "Cloud", level: "Cloud" },
+
+  { name: "Docker", group: "DevOps", level: "DevOps" },
+  { name: "Kubernetes", group: "DevOps", level: "Basics" },
+  { name: "Jenkins", group: "DevOps", level: "Basics" },
+
+  { name: "Linux", group: "Systems", level: "Basics" },
+
+  { name: "Git", group: "Tools", level: "Core" },
+  { name: "GitHub", group: "Tools", level: "Core" },
+];
+
+export const tools = [
+  "VS Code",
+  "PyCharm",
+  "Postman",
+  "Docker Desktop",
+  "XAMPP",
+  "Git",
+  "GitHub",
+  "Git Bash",
 ];
 
 export const awsServices = ["EC2", "S3", "VPC", "RDS", "IAM"];
@@ -39,21 +57,35 @@ export const projects = [
     short: "Full-stack booking platform with separate Admin and User workflows.",
     description:
       "Built a full-stack car rental platform with vehicle management, booking workflows, CRUD operations, booking validation, availability updates, profile management, and admin-side booking and user management.",
-    stack: ["React.js", "Python", "FastAPI", "MySQL", "JavaScript"],
+    stack: [
+      "React.js",
+      "Python",
+      "FastAPI",
+      "MySQL",
+      "JavaScript",
+      "HTML",
+      "CSS",
+    ],
     github: "https://github.com/Mohamedhansath/car-rental",
     live: "https://car-rental-seven-ochre.vercel.app",
-    image: "/projects/car-rental.jpg",
   },
   {
     number: "02",
     name: "Gym Management System",
     short: "Responsive gym management application with member and payment workflows.",
     description:
-      "Developed a full-stack gym management web application across frontend, backend, and MySQL database components, with dashboard operations and a mobile-friendly UI.",
-    stack: ["React.js", "Python", "FastAPI", "MySQL", "JavaScript"],
+      "Developed a full-stack gym management web application spanning frontend, backend, and MySQL database components, with dashboard operations and a mobile-friendly UI.",
+    stack: [
+      "React.js",
+      "Python",
+      "FastAPI",
+      "MySQL",
+      "JavaScript",
+      "HTML",
+      "CSS",
+    ],
     github: "https://github.com/Mohamedhansath/gym",
     live: "https://gym-woad-kappa.vercel.app",
-    image: "/projects/gym-management.jpg",
   },
 ];
 
