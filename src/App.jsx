@@ -369,8 +369,12 @@ function App() {
                 <GlassCard className="cert-card">
                   <span className="card-label">CERTIFICATIONS // ACHIEVEMENTS</span>
                   {certifications.map((item, i) => (
-                    <div className="cert-row" key={item}>
-                      <span>0{i + 1}</span><p>{item}</p>
+                    <div className="cert-row" key={item.title}>
+                      <span>0{i + 1}</span>
+                      <div>
+                        <strong>{item.title}</strong>
+                        <p>{item.issuer} · {item.date}</p>
+                      </div>
                     </div>
                   ))}
                 </GlassCard>
