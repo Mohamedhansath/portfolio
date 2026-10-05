@@ -29,7 +29,14 @@ npm run preview
 Mohamed_Hansath_Jarvis_Portfolio/
 ├── public/
 │   ├── profile.jpg
-│   └── Mohamed_Hansath_Resume.docx
+│   ├── Mohamed_Hansath_Resume.pdf
+│   ├── projects/
+│   │   ├── car-rental.jpg
+│   │   └── gym-management.jpg
+│   └── certificates/
+│       ├── full-stack-internship.jpg
+│       ├── python-mysql-firebase-fastapi-github-aws.jpg
+│       └── html-css-bootstrap-javascript-react-js.jpg
 ├── src/
 │   ├── components/
 │   │   ├── GlassCard.jsx
@@ -60,6 +67,6 @@ Mohamed_Hansath_Jarvis_Portfolio/
 
 ## Before deployment
 
-The resume button currently downloads the supplied DOCX resume. If you later get a public PDF URL, replace `profile.resume` in `src/data.js`.
+The resume button downloads `public/Mohamed_Hansath_Resume.pdf`. The Projects section uses the supplied project screenshots, and the Certifications section displays three separate certificate previews with an in-page modal.
 
 The external Google Fonts import can also be removed for a fully self-contained/offline build; the CSS already has system fallbacks.
