@@ -368,18 +368,28 @@ function App() {
                 </GlassCard>
               </Reveal>
               <Reveal delay={130}>
-                <GlassCard className="cert-card">
-                  <span className="card-label">CERTIFICATIONS // ACHIEVEMENTS</span>
-                  {certifications.map((item, i) => (
-                    <div className="cert-row" key={item.title}>
-                      <span>0{i + 1}</span>
-                      <div>
-                        <strong>{item.title}</strong>
-                        <p>{item.issuer} · {item.date}</p>
-                      </div>
+                  <GlassCard className="cert-card">
+                    <span className="card-label">CERTIFICATIONS // ACHIEVEMENTS</span>
+                    <div className="cert-list">
+                      {certifications.map((item, i) => (
+                        <div className="cert-row" key={item.title}>
+                          <span className="cert-number">0{i + 1}</span>
+                          <button
+                            className="cert-preview"
+                            onClick={() => setCertificateOpen(item)}
+                            aria-label={`View ${item.title} certificate`}
+                          >
+                            <img src={item.image} alt="" />
+                            <span>VIEW</span>
+                          </button>
+                          <div className="cert-copy">
+                            <strong>{item.title}</strong>
+                            <p>{item.issuer} · {item.date}</p>
+                          </div>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </GlassCard>
+                  </GlassCard>
               </Reveal>
             </div>
           </div>
