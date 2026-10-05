@@ -216,7 +216,7 @@ function App() {
                 </GlassCard>
                 <GlassCard className="stat-card">
                   <span className="stat-num">BCA</span>
-                  <div><strong>Computer Applications</strong><small>2022 — 2025</small></div>
+                  <div><strong>Computer Applications</strong><small>2022 — 2026</small></div>
                 </GlassCard>
               </div>
             </Reveal>
