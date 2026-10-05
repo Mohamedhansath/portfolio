@@ -8,7 +8,7 @@ export const profile = {
   github: "https://github.com/Mohamedhansath",
   linkedin: "https://www.linkedin.com/in/mohamed-hansath-761011432/",
   portfolio: "https://mohamed-hansath-portfolio.vercel.app/",
-  resume: "/Mohamed_Hansath_Resume_Updated_2026_Firebase.pdf",
+  resume: "/Mohamed_Hansath_Resume.pdf",
 };
 
 export const skills = [
@@ -68,6 +68,7 @@ export const projects = [
     ],
     github: "https://github.com/Mohamedhansath/car-rental",
     live: "https://car-rental-seven-ochre.vercel.app",
+    image: "/projects/car-rental.jpg",
   },
   {
     number: "02",
@@ -86,6 +87,7 @@ export const projects = [
     ],
     github: "https://github.com/Mohamedhansath/gym",
     live: "https://gym-woad-kappa.vercel.app",
+    image: "/projects/gym-management.jpg",
   },
 ];
 
@@ -115,15 +117,18 @@ export const certifications = [
     title: "Full Stack Development Internship",
     issuer: "Vebbox Software Solutions Pvt. Ltd.",
     date: "April 2026",
+    image: "/certificates/full-stack-internship.jpg",
   },
   {
     title: "Python, MySQL, Firebase, FastAPI, GitHub, AWS",
     issuer: "Vebbox Software Solutions",
     date: "January 2026",
+    image: "/certificates/python-mysql-firebase-fastapi-github-aws.jpg",
   },
   {
     title: "HTML, CSS, Bootstrap, JavaScript, React JS",
     issuer: "Vebbox Software Solutions",
     date: "September 2025",
+    image: "/certificates/html-css-bootstrap-javascript-react-js.jpg",
   },
 ];
