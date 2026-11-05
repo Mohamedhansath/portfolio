@@ -81,7 +81,7 @@ export const projects = [
       "Created a responsive application tracker with dashboard summaries, add/edit/delete workflows, status filters, search, sorting, interview and follow-up dates, notes, and JSON import/export. Registration and profile flows are local demo features; application records are stored in the browser's LocalStorage and are not synced to a server.",
     stack: ["React", "Vite", "JavaScript", "CSS", "Lucide React", "LocalStorage"],
     github: "https://github.com/Mohamedhansath/smart-job-application-tracker",
-    live: "https://smart-job-application-tracker.vercel.app/",
+    live: "https://smart-job-application-tracker-tan.vercel.app/",
     image: "/projects/applyflow.jpg",
   },
   {
