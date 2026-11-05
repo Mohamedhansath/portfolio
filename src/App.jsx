@@ -208,8 +208,8 @@ function App() {
             <Reveal delay={90}>
               <div className="stat-stack">
                 <GlassCard className="stat-card">
-                  <span className="stat-num">02</span>
-                  <div><strong>Practical projects</strong><small>Car Rental + Gym Management</small></div>
+                  <span className="stat-num">05</span>
+                  <div><strong>Featured projects</strong><small>Product, career and management apps</small></div>
                 </GlassCard>
                 <GlassCard className="stat-card">
                   <span className="stat-num">10+</span>
@@ -282,7 +282,7 @@ function App() {
             index="03"
             eyebrow="BUILD LOG"
             title="Featured projects"
-            text="Two practical full-stack applications built across frontend, backend and database layers."
+            text="A selection of responsive web applications, interactive product experiences, and practical management tools."
           />
           <div className="projects-list">
             {projects.map((project, index) => (
